@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  schedule:
+    image: registry.cn-beijing.aliyuncs.com/tianli-spider/spider
+    restart: always
+    ports:
+      - '6789:6789'
+    command: python start.py
