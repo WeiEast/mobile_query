@@ -61,6 +61,7 @@ def query():
             phone = request.args.get('phone')
         elif request.method == 'POST':
             phone = request.POST.get('phone')
+        print (phone)
         return (jsonify(query_all(phone)), 200)
     except Exception as e:
         print(e)
@@ -69,7 +70,7 @@ def query():
 
 
 if __name__ == '__main__':
-    print('starting server at 6789  ...')
-    gevent_server = pywsgi.WSGIServer(('0.0.0.0',6789), app)
+    print('starting server at 7890  ...')
+    gevent_server = pywsgi.WSGIServer(('0.0.0.0',7890), app)
     gevent_server.serve_forever()
 

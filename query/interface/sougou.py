@@ -102,6 +102,7 @@ def get_tag_in_web(phone,retry=3):
 	"""
 	url = 'https://www.sogou.com/web'
 	params = {'query':phone}
+	msg = ''
 	while retry:
 		r = requests.get(url,params,headers=headers,cookies=cookies)
 
@@ -115,7 +116,7 @@ def get_tag_in_web(phone,retry=3):
 
 		# 是号码的第1种情况
 		try:
-			msg = re.search(r'号码通用户数据：(.*?)\)',r.text)[1].replace(
+			msg = re.search(r'号码通用户数据：(.*?)\)',r.text).group(1).replace(
 					"','0','5','",'').replace("：0'",'')
 			return msg
 		except Exception as e:

@@ -1,9 +1,22 @@
 version: '2'
 
 services:
-  schedule:
-    image: registry.cn-beijing.aliyuncs.com/tianli-spider/spider
+  selenium_app1:
+    image: registry.cn-beijing.aliyuncs.com/tianli-spider/query-phone
     restart: always
     ports:
-      - '6789:6789'
-    command: python start.py
+      - 7890:7890
+    command: python3 app.py 
+    links:
+      - redis:redis
+
+  selenium_app2:
+    image: registry.cn-beijing.aliyuncs.com/tianli-spider/query-phone
+    restart: always
+    command: python3 sougou_cookie.py
+    links:
+      - redis:redis
+
+  redis:
+    image: redis:alpine
+    restart: always

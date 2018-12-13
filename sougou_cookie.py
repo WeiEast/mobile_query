@@ -14,7 +14,7 @@ def get_cookies():
 
 	base_url = config.CHROME_BASE_URL
 	try:
-		driver = webdriver.Chrome(chrome_options=chrome_options)
+		driver = webdriver.Chrome(executable_path=(r'/usr/local/bin/chromedriver'),chrome_options=chrome_options)
 	except:
 		driver = webdriver.Chrome(executable_path=(config.CHROME_DRIVER_PATH), chrome_options=chrome_options)
 
@@ -23,14 +23,14 @@ def get_cookies():
 	driver.get(base_url + "/")
 	while 1:
 		num = cache.cookie_count()
-		print(get_current_timestamp(),':redis 还有',num,'个cookie。。。')
+		print(get_current_timestamp(),':redis have',num,'cookie ...')
 		if num < config.COOKIES_POOL_SIZE:
 			cookie = driver.get_cookies()
 			cookies = dict()
 			for i in cookie:
 				cookies[i['name']] = i['value']
 			cache.put(cookies)
-			print('成功存储了1个cookie')
+			print('save one cookie')
 			driver.delete_all_cookies()
 			driver.refresh()
 		time.sleep(1)
