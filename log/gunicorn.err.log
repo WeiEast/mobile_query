@@ -12,3 +12,207 @@
 [2018-12-13 19:14:34 +0800] [48895] [INFO] Booting worker with pid: 48895
 [2018-12-13 19:14:34 +0800] [48896] [INFO] Booting worker with pid: 48896
 [2018-12-13 19:14:34 +0800] [48897] [INFO] Booting worker with pid: 48897
+[2018-12-13 20:37:06 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:48894)
+[2018-12-13 20:37:06 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:48895)
+[2018-12-13 20:37:06 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:48896)
+[2018-12-13 20:37:06 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:48897)
+[2018-12-13 20:37:06 +0800] [48895] [INFO] Worker exiting (pid: 48895)
+[2018-12-13 20:37:06 +0800] [48896] [INFO] Worker exiting (pid: 48896)
+[2018-12-13 20:37:06 +0800] [48897] [INFO] Worker exiting (pid: 48897)
+[2018-12-13 20:37:06 +0800] [48894] [INFO] Worker exiting (pid: 48894)
+[2018-12-13 20:37:06 +0800] [49520] [INFO] Booting worker with pid: 49520
+[2018-12-13 20:37:06 +0800] [49522] [INFO] Booting worker with pid: 49522
+[2018-12-13 20:37:06 +0800] [49523] [INFO] Booting worker with pid: 49523
+[2018-12-13 20:37:07 +0800] [49524] [INFO] Booting worker with pid: 49524
+[2018-12-13 20:42:02 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49520)
+[2018-12-13 20:42:02 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49522)
+[2018-12-13 20:42:02 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49523)
+[2018-12-13 20:42:02 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49524)
+[2018-12-13 20:42:02 +0800] [49520] [INFO] Worker exiting (pid: 49520)
+[2018-12-13 20:42:02 +0800] [49523] [INFO] Worker exiting (pid: 49523)
+[2018-12-13 20:42:02 +0800] [49524] [INFO] Worker exiting (pid: 49524)
+[2018-12-13 20:42:02 +0800] [49522] [INFO] Worker exiting (pid: 49522)
+[2018-12-13 20:42:02 +0800] [49531] [INFO] Booting worker with pid: 49531
+[2018-12-13 20:42:02 +0800] [49532] [INFO] Booting worker with pid: 49532
+[2018-12-13 20:42:02 +0800] [49533] [INFO] Booting worker with pid: 49533
+[2018-12-13 20:42:02 +0800] [49534] [INFO] Booting worker with pid: 49534
+[2018-12-13 21:36:07 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49531)
+[2018-12-13 21:36:07 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49532)
+[2018-12-13 21:36:07 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49533)
+[2018-12-13 21:36:07 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49534)
+[2018-12-13 21:36:07 +0800] [49531] [INFO] Worker exiting (pid: 49531)
+[2018-12-13 21:36:07 +0800] [49534] [INFO] Worker exiting (pid: 49534)
+[2018-12-13 21:36:07 +0800] [49533] [INFO] Worker exiting (pid: 49533)
+[2018-12-13 21:36:07 +0800] [49532] [INFO] Worker exiting (pid: 49532)
+[2018-12-13 21:36:07 +0800] [49551] [INFO] Booting worker with pid: 49551
+[2018-12-13 21:36:07 +0800] [49552] [INFO] Booting worker with pid: 49552
+[2018-12-13 21:36:07 +0800] [49553] [INFO] Booting worker with pid: 49553
+[2018-12-13 21:36:07 +0800] [49554] [INFO] Booting worker with pid: 49554
+[2018-12-13 22:30:12 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49551)
+[2018-12-13 22:30:12 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49552)
+[2018-12-13 22:30:12 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49553)
+[2018-12-13 22:30:12 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49554)
+[2018-12-13 22:30:12 +0800] [49552] [INFO] Worker exiting (pid: 49552)
+[2018-12-13 22:30:12 +0800] [49551] [INFO] Worker exiting (pid: 49551)
+[2018-12-13 22:30:12 +0800] [49553] [INFO] Worker exiting (pid: 49553)
+[2018-12-13 22:30:12 +0800] [49554] [INFO] Worker exiting (pid: 49554)
+[2018-12-13 22:30:12 +0800] [49568] [INFO] Booting worker with pid: 49568
+[2018-12-13 22:30:12 +0800] [49569] [INFO] Booting worker with pid: 49569
+[2018-12-13 22:30:12 +0800] [49570] [INFO] Booting worker with pid: 49570
+[2018-12-13 22:30:12 +0800] [49571] [INFO] Booting worker with pid: 49571
+[2018-12-14 08:30:57 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49568)
+[2018-12-14 08:30:57 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49569)
+[2018-12-14 08:30:57 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49570)
+[2018-12-14 08:30:57 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49571)
+[2018-12-14 08:30:57 +0800] [49568] [INFO] Worker exiting (pid: 49568)
+[2018-12-14 08:30:57 +0800] [49570] [INFO] Worker exiting (pid: 49570)
+[2018-12-14 08:30:57 +0800] [49569] [INFO] Worker exiting (pid: 49569)
+[2018-12-14 08:30:57 +0800] [49571] [INFO] Worker exiting (pid: 49571)
+[2018-12-14 08:30:57 +0800] [49647] [INFO] Booting worker with pid: 49647
+[2018-12-14 08:30:57 +0800] [49649] [INFO] Booting worker with pid: 49649
+[2018-12-14 08:30:57 +0800] [49651] [INFO] Booting worker with pid: 49651
+[2018-12-14 08:30:57 +0800] [49656] [INFO] Booting worker with pid: 49656
+[2018-12-14 09:01:13 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49647)
+[2018-12-14 09:01:13 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49649)
+[2018-12-14 09:01:13 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49651)
+[2018-12-14 09:01:13 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49656)
+[2018-12-14 09:01:13 +0800] [49647] [INFO] Worker exiting (pid: 49647)
+[2018-12-14 09:01:13 +0800] [49649] [INFO] Worker exiting (pid: 49649)
+[2018-12-14 09:01:13 +0800] [49656] [INFO] Worker exiting (pid: 49656)
+[2018-12-14 09:01:13 +0800] [49651] [INFO] Worker exiting (pid: 49651)
+[2018-12-14 09:01:13 +0800] [49747] [INFO] Booting worker with pid: 49747
+[2018-12-14 09:01:14 +0800] [49748] [INFO] Booting worker with pid: 49748
+[2018-12-14 09:01:14 +0800] [49749] [INFO] Booting worker with pid: 49749
+[2018-12-14 09:01:14 +0800] [49750] [INFO] Booting worker with pid: 49750
+[2018-12-14 12:43:02 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49747)
+[2018-12-14 12:43:02 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49748)
+[2018-12-14 12:43:02 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49749)
+[2018-12-14 12:43:02 +0800] [48885] [CRITICAL] WORKER TIMEOUT (pid:49750)
+[2018-12-14 12:43:02 +0800] [49750] [INFO] Worker exiting (pid: 49750)
+[2018-12-14 12:43:02 +0800] [49747] [INFO] Worker exiting (pid: 49747)
+[2018-12-14 12:43:02 +0800] [49748] [INFO] Worker exiting (pid: 49748)
+[2018-12-14 12:43:02 +0800] [49749] [INFO] Worker exiting (pid: 49749)
+[2018-12-14 12:43:02 +0800] [58911] [INFO] Booting worker with pid: 58911
+[2018-12-14 12:43:02 +0800] [58911] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 196, in init_process
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 58, in patch
+ImportError: cannot import name 'monkey' from 'gevent' (/Users/apple/anaconda3/lib/python3.7/site-packages/gevent/__init__.py)
+[2018-12-14 12:43:02 +0800] [58911] [INFO] Worker exiting (pid: 58911)
+[2018-12-14 12:43:03 +0800] [58912] [INFO] Booting worker with pid: 58912
+[2018-12-14 12:43:03 +0800] [58912] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 196, in init_process
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 58, in patch
+ImportError: cannot import name 'monkey' from 'gevent' (/Users/apple/anaconda3/lib/python3.7/site-packages/gevent/__init__.py)
+[2018-12-14 12:43:03 +0800] [58912] [INFO] Worker exiting (pid: 58912)
+[2018-12-14 12:43:03 +0800] [58913] [INFO] Booting worker with pid: 58913
+[2018-12-14 12:43:03 +0800] [58913] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 196, in init_process
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 58, in patch
+ImportError: cannot import name 'monkey' from 'gevent' (/Users/apple/anaconda3/lib/python3.7/site-packages/gevent/__init__.py)
+[2018-12-14 12:43:03 +0800] [58913] [INFO] Worker exiting (pid: 58913)
+[2018-12-14 12:43:03 +0800] [58914] [INFO] Booting worker with pid: 58914
+[2018-12-14 12:43:03 +0800] [58914] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 196, in init_process
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/workers/ggevent.py", line 58, in patch
+ImportError: cannot import name 'monkey' from 'gevent' (/Users/apple/anaconda3/lib/python3.7/site-packages/gevent/__init__.py)
+[2018-12-14 12:43:03 +0800] [58914] [INFO] Worker exiting (pid: 58914)
+Traceback (most recent call last):
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 212, in run
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 545, in manage_workers
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 616, in spawn_workers
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 567, in spawn_worker
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 245, in handle_chld
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/apple/anaconda3/bin/gunicorn", line 11, in <module>
+    sys.exit(run())
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 61, in run
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/app/base.py", line 223, in run
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/app/base.py", line 72, in run
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 232, in run
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 345, in halt
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 393, in stop
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 245, in handle_chld
+  File "/Users/apple/anaconda3/lib/python3.7/site-packages/gunicorn/arbiter.py", line 525, in reap_workers
+gunicorn.errors.HaltServer: <HaltServer 'Worker failed to boot.' 3>
+[2018-12-14 12:56:32 +0800] [59137] [INFO] Starting gunicorn 19.9.0
+[2018-12-14 12:56:32 +0800] [59137] [INFO] Listening at: http://0.0.0.0:6789 (59137)
+[2018-12-14 12:56:32 +0800] [59137] [INFO] Using worker: gevent
+[2018-12-14 12:56:32 +0800] [59145] [INFO] Booting worker with pid: 59145
+[2018-12-14 12:56:32 +0800] [59146] [INFO] Booting worker with pid: 59146
+[2018-12-14 12:56:33 +0800] [59147] [INFO] Booting worker with pid: 59147
+[2018-12-14 12:56:33 +0800] [59148] [INFO] Booting worker with pid: 59148
+[2018-12-14 12:56:40 +0800] [59182] [INFO] Starting gunicorn 19.9.0
+[2018-12-14 12:56:40 +0800] [59182] [INFO] Listening at: http://0.0.0.0:6789 (59182)
+[2018-12-14 12:56:40 +0800] [59182] [INFO] Using worker: gevent
+[2018-12-14 12:56:40 +0800] [59190] [INFO] Booting worker with pid: 59190
+[2018-12-14 12:56:40 +0800] [59191] [INFO] Booting worker with pid: 59191
+[2018-12-14 12:56:40 +0800] [59192] [INFO] Booting worker with pid: 59192
+[2018-12-14 12:56:40 +0800] [59193] [INFO] Booting worker with pid: 59193
+[2018-12-14 13:28:13 +0800] [59182] [CRITICAL] WORKER TIMEOUT (pid:59190)
+[2018-12-14 13:28:13 +0800] [59182] [CRITICAL] WORKER TIMEOUT (pid:59191)
+[2018-12-14 13:28:13 +0800] [59182] [CRITICAL] WORKER TIMEOUT (pid:59192)
+[2018-12-14 13:28:13 +0800] [59182] [CRITICAL] WORKER TIMEOUT (pid:59193)
+/Users/apple/anaconda3/lib/python3.6/site-packages/gunicorn/workers/ggevent.py:65: MonkeyPatchWarning: Monkey-patching ssl after ssl has already been imported may lead to errors, including RecursionError on Python 3.6. Please monkey-patch earlier. See https://github.com/gevent/gevent/issues/1016
+  monkey.patch_all(subprocess=True)
+[2018-12-14 13:28:13 +0800] [59192] [INFO] Worker exiting (pid: 59192)
+/Users/apple/anaconda3/lib/python3.6/site-packages/gunicorn/workers/ggevent.py:65: MonkeyPatchWarning: Monkey-patching ssl after ssl has already been imported may lead to errors, including RecursionError on Python 3.6. Please monkey-patch earlier. See https://github.com/gevent/gevent/issues/1016
+  monkey.patch_all(subprocess=True)
+[2018-12-14 13:28:13 +0800] [59193] [INFO] Worker exiting (pid: 59193)
+/Users/apple/anaconda3/lib/python3.6/site-packages/gunicorn/workers/ggevent.py:65: MonkeyPatchWarning: Monkey-patching ssl after ssl has already been imported may lead to errors, including RecursionError on Python 3.6. Please monkey-patch earlier. See https://github.com/gevent/gevent/issues/1016
+  monkey.patch_all(subprocess=True)
+[2018-12-14 13:28:13 +0800] [59190] [INFO] Worker exiting (pid: 59190)
+/Users/apple/anaconda3/lib/python3.6/site-packages/gunicorn/workers/ggevent.py:65: MonkeyPatchWarning: Monkey-patching ssl after ssl has already been imported may lead to errors, including RecursionError on Python 3.6. Please monkey-patch earlier. See https://github.com/gevent/gevent/issues/1016
+  monkey.patch_all(subprocess=True)
+[2018-12-14 13:28:13 +0800] [59191] [INFO] Worker exiting (pid: 59191)
+[2018-12-14 13:28:13 +0800] [59387] [INFO] Booting worker with pid: 59387
+[2018-12-14 13:28:14 +0800] [59388] [INFO] Booting worker with pid: 59388
+[2018-12-14 13:28:14 +0800] [59389] [INFO] Booting worker with pid: 59389
+[2018-12-14 13:28:14 +0800] [59390] [INFO] Booting worker with pid: 59390
+[2018-12-14 13:58:04 +0800] [59951] [INFO] Starting gunicorn 19.9.0
+[2018-12-14 13:58:04 +0800] [59951] [INFO] Listening at: http://0.0.0.0:6789 (59951)
+[2018-12-14 13:58:04 +0800] [59951] [INFO] Using worker: gevent
+[2018-12-14 13:58:04 +0800] [59959] [INFO] Booting worker with pid: 59959
+[2018-12-14 13:58:04 +0800] [59960] [INFO] Booting worker with pid: 59960
+[2018-12-14 13:58:04 +0800] [59961] [INFO] Booting worker with pid: 59961
+[2018-12-14 13:58:04 +0800] [59962] [INFO] Booting worker with pid: 59962
+[2018-12-14 14:11:16 +0800] [60480] [INFO] Starting gunicorn 19.9.0
+[2018-12-14 14:11:16 +0800] [60480] [INFO] Listening at: http://0.0.0.0:6789 (60480)
+[2018-12-14 14:11:16 +0800] [60480] [INFO] Using worker: gevent
+[2018-12-14 14:11:16 +0800] [60488] [INFO] Booting worker with pid: 60488
+[2018-12-14 14:11:16 +0800] [60489] [INFO] Booting worker with pid: 60489
+[2018-12-14 14:11:16 +0800] [60490] [INFO] Booting worker with pid: 60490
+[2018-12-14 14:11:16 +0800] [60491] [INFO] Booting worker with pid: 60491
+[2018-12-14 14:49:06 +0800] [61598] [INFO] Starting gunicorn 19.9.0
+[2018-12-14 14:49:06 +0800] [61598] [INFO] Listening at: http://0.0.0.0:6789 (61598)
+[2018-12-14 14:49:06 +0800] [61598] [INFO] Using worker: gevent
+[2018-12-14 14:49:06 +0800] [61606] [INFO] Booting worker with pid: 61606
+[2018-12-14 14:49:06 +0800] [61607] [INFO] Booting worker with pid: 61607
+[2018-12-14 14:49:06 +0800] [61608] [INFO] Booting worker with pid: 61608
+[2018-12-14 14:49:06 +0800] [61609] [INFO] Booting worker with pid: 61609
+[2018-12-14 14:52:14 +0800] [61691] [INFO] Starting gunicorn 19.9.0
+[2018-12-14 14:52:14 +0800] [61691] [INFO] Listening at: http://0.0.0.0:6789 (61691)
+[2018-12-14 14:52:14 +0800] [61691] [INFO] Using worker: gevent
+[2018-12-14 14:52:14 +0800] [61699] [INFO] Booting worker with pid: 61699
+[2018-12-14 14:52:14 +0800] [61700] [INFO] Booting worker with pid: 61700
+[2018-12-14 14:52:14 +0800] [61701] [INFO] Booting worker with pid: 61701
+[2018-12-14 14:52:14 +0800] [61702] [INFO] Booting worker with pid: 61702
+[2018-12-14 14:56:39 +0800] [61810] [INFO] Starting gunicorn 19.9.0
+[2018-12-14 14:56:39 +0800] [61810] [INFO] Listening at: http://0.0.0.0:6789 (61810)
+[2018-12-14 14:56:39 +0800] [61810] [INFO] Using worker: gevent
+[2018-12-14 14:56:39 +0800] [61818] [INFO] Booting worker with pid: 61818
+[2018-12-14 14:56:39 +0800] [61819] [INFO] Booting worker with pid: 61819
+[2018-12-14 14:56:39 +0800] [61820] [INFO] Booting worker with pid: 61820
+[2018-12-14 14:56:39 +0800] [61821] [INFO] Booting worker with pid: 61821

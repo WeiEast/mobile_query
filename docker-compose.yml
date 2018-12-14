@@ -1,8 +1,9 @@
 version: '2'
 
 services:
-  selenium_app1:
-    image: registry.cn-beijing.aliyuncs.com/tianli-spider/query-phone
+  seleniumWeb:
+    # image: registry.cn-beijing.aliyuncs.com/tianli-spider/query-phone
+    image: seleniums1
     restart: always
     ports:
       - 7890:7890
@@ -10,8 +11,9 @@ services:
     links:
       - redis:redis
 
-  selenium_app2:
-    image: registry.cn-beijing.aliyuncs.com/tianli-spider/query-phone
+  seleniumCookies:
+    # image: registry.cn-beijing.aliyuncs.com/tianli-spider/query-phone
+    image: seleniums1
     restart: always
     command: python3 sougou_cookie.py
     links:

@@ -120,12 +120,14 @@ def get_tag_in_web(phone,retry=3):
 					"','0','5','",'').replace("：0'",'')
 			return msg
 		except Exception as e:
-			print(e)
+			pass
 
 		# 是号码的第2种情况
 		try:
-			msg = etree.HTML(r.text).xpath("//div[@class='rb']/h3/a/text()")[0]
-			return msg
+			a_list = etree.HTML(r.text).xpath("//div[@class='rb']/h3/a")
+			for a in a_list:
+				if 'sogou_vr_70030302_title' in a.xpath('./@id')[0]:
+					return a.xpath('./text()')[0]
 		except Exception as e:
 			print(e)
 
@@ -142,20 +144,17 @@ def query(phone):
 	"""
 	addr= get_address(phone)
 	tag = get_tag_in_web(phone)
-	if addr or tag:
-		return {
-		'source':'搜狗',
-		'phone':phone,
-		'status':'success',
-		'addr':addr,
-		'tag':tag,
-		'timestamp':get_current_timestamp()}
+	if addr and tag and (tag not in ['号码不正确，未搜到','程序错误']):
+		status = 'success'
 	else:
-		return {
-		'source':'搜狗',
-		'phone' :phone,
-		'status':'failed',
-		'timestamp':get_current_timestamp(),}
+		status = 'failed'
+	return {
+	'source':'搜狗',
+	'phone':phone,
+	'status':status,
+	'addr':addr,
+	'tag':tag,
+	'timestamp':get_current_timestamp()}
 
 
 if __name__ == '__main__':
