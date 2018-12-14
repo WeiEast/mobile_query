@@ -1,8 +1,10 @@
-from gevent import pywsgi,monkey ;monkey.patch_all()
 from flask import Flask, jsonify, request, abort
 
-from tools.tool import get_current_timestamp
+from config import config
 from query.query import query_all
+from tools.tool import get_current_timestamp
+
+
 
 app = Flask(__name__)
 
@@ -10,7 +12,6 @@ app = Flask(__name__)
 @app.errorhandler(404)
 def not_found(error):
     """ handle 404 error"""
-
     msg = error.description
     return (jsonify({
         'code': '404',
@@ -22,7 +23,6 @@ def not_found(error):
 @app.errorhandler(403)  #
 def not_allowed(error):
     """handle 403 error"""
-
     msg = error.description
     return (jsonify({
         'code': '403',
@@ -34,7 +34,6 @@ def not_allowed(error):
 @app.errorhandler(500)  
 def internal_error(error):
     """handle 500 error"""
-
     msg = error.description
     return (jsonify({
         'code': '500',
@@ -46,7 +45,6 @@ def internal_error(error):
 @app.route('/', methods=['GET'])
 def index():
     """url for test index"""
-
     return (jsonify({
         'code': '1',
         'msg': 'success',
@@ -61,7 +59,6 @@ def query():
             phone = request.args.get('phone')
         elif request.method == 'POST':
             phone = request.POST.get('phone')
-        print (phone)
         return (jsonify(query_all(phone)), 200)
     except Exception as e:
         print(e)
@@ -70,7 +67,8 @@ def query():
 
 
 if __name__ == '__main__':
-    print('starting server at 7890  ...')
-    gevent_server = pywsgi.WSGIServer(('0.0.0.0',7890), app)
+    from gevent import pywsgi,monkey ;monkey.patch_all()
+    print('starting server at ',config.PORT,'  ...')
+    gevent_server = pywsgi.WSGIServer((config.IP,config.PORT), app)
     gevent_server.serve_forever()
 

@@ -1,17 +1,15 @@
 import re
 import time
-import json
-import requests
-requests.packages.urllib3.disable_warnings()
 from lxml import etree
-# from multiprocessing import Process
 
 from tools.redis_db import cache
-from tools.phantomjs import feed_cookies
-from tools.tool import get_current_timestamp
+from tools.tool import get_current_timestamp, download
+from config import config
 
 
-headers = {
+
+NAME = 'sougou'
+HEADERS = {
 "Host":"www.sogou.com",
 "Connection":"keep-alive",
 "User-Agent":("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) App"
@@ -20,11 +18,13 @@ headers = {
 "Accept-Encoding":"gzip, deflate, br",
 "Accept-Language":"zh-CN,zh;q=0.9,en;q=0.8,zh-TW;q=0.7",
 }
+COOKIES = cache.pop()
+
 
 
 def get_address(phone):
 	"""
-		获取手机号归属地的api
+		获取手机号归属地
 	"""
 	url = 'https://www.sogou.com/websearch/phoneAddress.jsp'
 	params = {
@@ -33,86 +33,49 @@ def get_address(phone):
 	'isSogoDomain':'0'
 	}
 	try:
-		text = requests.get(url,headers=headers,params=params,verify=False).text
+		text = download(url,headers=HEADERS,params=params).text
 		msg = re.search('"(.*?)"',text)[1]
 		return msg
 	except Exception as e:
 		return '全国'
 
-# # for api search ......
-# def get_tag(phone):
-	
-# 	url = 'https://www.sogou.com/reventondc/inner/vrapi'
-# 	params = {
-# 		'number':phone,
-# 		'type':'json',
-# 		'isSogoDomain':'0',
-# 		'callback':'show'
-# 	}
-# 	try:
-# 		text = requests.get(url,headers=headers,params=params,verify=False,
-# 					cookies=cookies).text
-# 		msg = re.search(r'\((\{.+?\})\)',text)[1]
-# 		msg = json.loads(msg)
-# 		return msg
-# 	except Exception as e:
-# 		print(e)
 
-# def query(phone):
-# 	addr= get_address(phone)
-# 	tag = get_tag(phone)
-# 	t = time.time()
-# 	if addr or tag:
-# 		return {
-# 		'phone':phone,
-# 		'status':'success',
-# 		'addr':addr,
-# 		'tag':tag,
-# 		't':t}
-# 	else:
-# 		return {
-# 		'phone' :phone,
-# 		'status':'failed',
-# 		't':t,}
-
-
-
-
-# for web search mobile --------------------
-cookies = cache.pop()
 def refresh_cookie():
 	"""
-		启动一个进程用无头浏览器获取指定数量的cookies
+		从redis获取可用的cookies
 	"""
-	global cookies
-	cookies = cache.pop()
-	if not cookies:
+	global COOKIES
+	COOKIES = cache.pop()
+	if not COOKIES:
 		print('redis 中没有cookie')
 		time.sleep(2)
-		# print('redis 中没有cookie，程序取cookie，请等待8s')
-		# p = Process(target=feed_cookies, args=(10,))
-		# p.start()
-		# time.sleep(10)
-		# cookies = cache.pop()
 
 
 def get_tag_in_web(phone,retry=3):
 	"""
 		在搜狗的web页面给号码打标签
 	"""
+
 	url = 'https://www.sogou.com/web'
 	params = {'query':phone}
 	msg = ''
 	while retry:
-		r = requests.get(url,params,headers=headers,cookies=cookies)
+		r = download(url,params=params,headers=HEADERS,cookies=COOKIES)
+
+		# 下载超时
+		if not r:
+			continue
 
 		# cookie 过期，刷新cookie，cookie 有用，存入数据库继续使用
 		if ' <form name="authform" method="POST" id="seccodeForm" action="/">' in r.text \
 		or 'sogou.com";"snapshot.sogoucdn.com"' in r.text: 
 			retry -= 1
 			refresh_cookie()
+			if not retry:
+				return '无可用cookie'
 			continue
-		cache.put(cookies)
+
+		cache.put(COOKIES)
 
 		# 是号码的第1种情况
 		try:
@@ -133,7 +96,7 @@ def get_tag_in_web(phone,retry=3):
 
 		#未搜到的情况	
 		if not msg:
-			return '号码不正确，未搜到'
+			return '未搜到'
 
 	return '程序错误'
 
@@ -142,19 +105,35 @@ def query(phone):
 	"""
 		查询入口
 	"""
+	# 先从缓存读取数据，缓存没有再查询
+	cache_key = NAME + phone
+	res = cache.get(cache_key)
+	if res:
+		return res
+
+	# 查询归属地 和 号码标签
 	addr= get_address(phone)
 	tag = get_tag_in_web(phone)
-	if addr and tag and (tag not in ['号码不正确，未搜到','程序错误']):
+
+	# 组织查询结果
+	if addr and tag and (tag not in ['程序错误','无可用cookie']):
 		status = 'success'
 	else:
 		status = 'failed'
-	return {
-	'source':'搜狗',
+	res = {
+	'source':NAME,
 	'phone':phone,
 	'status':status,
 	'addr':addr,
 	'tag':tag,
 	'timestamp':get_current_timestamp()}
+
+	# 如果查询成功，缓存数据
+	if  status == 'success':
+		cache.set(cache_key,res,config.RESULT_EXPIRE)
+
+	# 返回查询结果
+	return res
 
 
 if __name__ == '__main__':
