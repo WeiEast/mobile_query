@@ -7,6 +7,7 @@ from tools.tool import get_current_timestamp
 from config import config
 
 
+
 def get_cookies():
 	"""存指定量的cookie到redis"""
 	chrome_options = Options()
